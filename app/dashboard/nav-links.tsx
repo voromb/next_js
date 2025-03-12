@@ -9,11 +9,11 @@ import {
   import { usePathname } from 'next/navigation';
   import clsx from 'clsx';
    
-//  const links = [
-//   { name: 'Home', href: '/', icon: HomeIcon },
-//    { name: 'Invoices', href: '/invoices', icon: DocumentDuplicateIcon },
-//    { name: 'Customers', href: '/customers', icon: UserGroupIcon },
-//  ];
+  const links = [
+   { name: 'Home', href: '/', icon: HomeIcon },
+    { name: 'Invoices', href: '/invoices', icon: DocumentDuplicateIcon },
+    { name: 'Customers', href: '/customers', icon: UserGroupIcon },
+  ];
    
   export default function NavLinks() {
     const pathname = usePathname();
@@ -28,7 +28,7 @@ import {
             className={clsx(
               'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
               {
-                'bg-sky-100 text-blue-600': pathname === link.hrcd.ef,
+                'bg-sky-100 text-blue-600': pathname === link.href,
               },
             )}
           >
